@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Prólogo XML-->
+<!--Imports necesarios-->
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<!--Imports de elementos del documento-->
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.temperaturafx.temperaturafxController.TemperaturaConverterController"><!--Enace con el controller-->
+    <children>
+        <Label text="Grados Celsius: "/><!--Creador de la etiqueta "Grados Celsius" de manera gráfica-->
+        <TextField fx:id="textFieldCelsius" /><!--Creador del campo de escritura de manera gráfica-->
+        <Button text="Convertir" onAction="#convertTemperatura" /> <!--Generador del botón-->
+        <Label fx:id="labelFahrenheit" text="Grados Fahrenheit" /> <!--Creador del resultado-->
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" /><!--Dimesiones del padding de la pantalla-->
+    </padding>
+</VBox>
